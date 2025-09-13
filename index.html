@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <aside class="sidebar"> <!--aside=부가기능?그런느낌-->
+        <div class="profile">
+            <img src="C:\Users\User\Desktop\웹페이지\free-icon-profile-4675250.png" width="120">
+            <h2>노진구</h2>
+            <p>기타 설명란</p>
+        </div>
+        <nav>
+            <ul>
+                <li class="active">Today Plan</li>
+                <li class="active">Month Plan</li>
+            </ul>
+        </nav>
+        <div class="bottom">
+            <a href="#">로그아웃</a>
+            <a href="#">설정</a>
+        </div>
+    </aside>
+
+    <main class="main">
+        <header>
+            <h1>To Do</h1>
+            <div class="date">
+                <span>WED</span>
+                <h2>10</h2>
+                <span>september</span>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="search"> <!--placeholder=input값 힌트 -->             
+            </div>
+        </header>
+
+        <section class="todo-input">
+            <input type="text" id="taskInput" placeholder="할 일을 입력하세요"> <!--id = 요소의 고유 이름-->
+            <button id="addBtn">+</button>
+        </section>
+
+        <ul class="todo-list" id="todoList">
+            <li>
+                <input type="checkbox">
+                <span>보안알고리즘 복습</span>
+            </li>
+        </ul>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
