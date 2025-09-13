@@ -1,0 +1,72 @@
+body{
+    margin: 0; /*브라우저 기본 여백 제거*/
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex; /*좌우(위아래X)로 배치하기 위해*/
+    height: 100vh; /*화면 전체 높이 차지->사이드바가 화면 끝까지 내려옴*/
+}
+.sidebar{
+    width:250px;
+    background: pink; /*나중에 불투명도 설정해야돼*/
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /*위에서 아래로 정렬*/
+    justify-content: space-between; /*위쪽(프로필/메뉴) / 아래쪽(로그아웃/설정) 분리*/
+}
+.profile{
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+nav li{
+    padding: 10px 0; /*0은 왜 붙여?*/
+    cursor: pointer;
+}
+nav .active{
+    color: deeppink;
+    font-weight: bold;
+}
+
+.main{
+    flex: 1; /*남은 공간 전부 차지*/
+    background: linear-gradient(to bottom right, #c9e3ff, #f6dfff);
+    padding: 30px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.date{
+    text-align: center;
+}
+.search input{
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.todo-input{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.todo-input input{
+    flex: 1; /*가로 공간을 최대한 차지*/
+    padding: 10px;
+}
+.todo-list{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+.todo-list li{
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex; /*페크박스-글자 가로 배치*/
+    align-items: center;
+    gap: 10px;
+}
